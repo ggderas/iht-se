@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Turismo en Honduras">
+		<meta name="keywords" content="turismo, Honduras, hoteles, vacaciones, paisajes, Roatan, Utila, Guanaja, Islas de la Bahia, ruinas de Copan, Copan, Omoa, castillo San Fernando de Omoa, Tela, Ceiba, Tegucigalpa, San Pedro Sula, canopy, Lempira, playas, ruinas, cayos cochinos">
+		<title>Turismo en Honduras</title>
+		<link rel="icon" href="hn-icon.png" type="image">
 	</head>
 
 	<body>
