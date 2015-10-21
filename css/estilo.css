@@ -1,0 +1,22 @@
+.img-media
+{
+  height: 100px;
+}
+
+.img-carousel
+{
+  height: 300px;
+}
+
+.puntero-manito
+{
+  cursor: pointer;
+}
+
+figure img
+{
+    /* Centrar imagenes dentro de los elementos Figure*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
