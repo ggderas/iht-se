@@ -1,4 +1,4 @@
-.img-media
+.img-tarjeta
 {
   height: 100px;
 }
@@ -29,6 +29,20 @@
   height: 500px
 }
 
+.img-lg
+{
+  width:500px;
+  height: 200px
+}
+
+/*Hacer un poco mas grande la imagen cuando se posicione en ella*/
+:hover.img-lg
+{
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+
 figure img
 {
     /* Centrar imagenes dentro de los elementos Figure*/
@@ -46,6 +60,27 @@ figure img
 
 
 /* ****************************** ANIIMACIONES ********************* */
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
 @keyframes tada {
   from {
     transform: scale3d(1, 1, 1);
@@ -70,5 +105,71 @@ figure img
 
 .tada {
   animation-name: tada;
+  animation-duration: 2s;
+}
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+  animation-duration: 1s;
+}
+
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInRight {
+  animation-name: bounceInRight;
   animation-duration: 2s;
 }
