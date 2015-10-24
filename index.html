@@ -1,26 +1,57 @@
-<?php
-	$nombrePagina = 'Turismo en Honduras';
-	require_once("util.php");
-?>
-
-
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Turismo en Honduras">
+		<meta name="keywords" content="turismo, Honduras, hoteles, vacaciones, paisajes, Roatan, Utila, Guanaja, Islas de la Bahia, ruinas de Copan, Copan, Omoa, castillo San Fernando de Omoa, Tela, Ceiba, Tegucigalpa, San Pedro Sula, canopy, Lempira, playas, ruinas, cayos cochinos, centroamerica, america latina, latinoamerica">
+		<title>Turismo en Honduras</title>
 
-		<?php require_once("content/header.php"); ?>
+		<link rel="icon" href="hn-icon.png" type="image">
+
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" media="screen" title="Bootstrap CSS" charset="utf-8">
+		<link rel="stylesheet" href="css/estilo.css" media="screen" title="Bootstrap CSS" charset="utf-8">
+		<link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.min.css" charset="utf-8">
 
 	</head>
 
 	<body>
 		<div class="container">
 
-			<?php require_once("content/menu.php"); ?>
+			<ul class="nav nav-tabs">
+			  <li class="dropdown">
+			    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Instituto de Turismo <span class="caret"></span></a>
+			    <ul class="dropdown-menu">
+			      <li><a href="<?php echo $rootAddress; ?>content/info/misionVision.php">Misión y Visión</a></li>
+			      <li><a href="#">Another action</a></li>
+			      <li><a href="#">Something else here</a></li>
+			      <li role="separator" class="divider"></li>
+			      <li><a href="#">Separated link</a></li>
+			      <li role="separator" class="divider"></li>
+			      <li><a href="#">One more separated link</a></li>
+			    </ul>
+			  </li>
+			  <li class="nav-item">
+			    <a href="#" class="nav-link">Link</a>
+			  </li>
+			  <li class="nav-item">
+			    <a href="#" class="nav-link">Another link</a>
+			  </li>
+			  <li class="nav-item disabled">
+			    <a href="#" class="nav-link">Disabled</a>
+			  </li>
+			</ul>
+
+			<div class="row">
+			  <div class="col-lg-12">
+
+			  </div>
+			</div>
+
 
 			<div class="row">
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
 					<div class="list-group">
-						<div class="list-group-item puntero-manito">
+						<div class="list-group-item puntero-manito tarjeta">
 							<h3 class="list-group-item-heading"></h3>
 							<p class="text-center">
 								<figure>
@@ -37,7 +68,7 @@
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-					<div class="list-group-item puntero-manito">
+					<div class="list-group-item puntero-manito tarjeta">
 						<h3 class="list-group-item-heading"></h3>
 						<p class="text-center">
 							<figure>
@@ -63,7 +94,7 @@
 							texto texto texto texto texto texto texto texto texto texto texto texto
 						</p>
 					</div>
-					<div class="list-group-item puntero-manito">
+					<div class="list-group-item puntero-manito tarjeta">
 						<h3 class="list-group-item-heading"></h3>
 						<p class="text-center">
 							<figure>
@@ -76,35 +107,7 @@
 							texto texto texto texto texto texto texto texto texto texto texto texto
 						</p>
 					</div>
-					<div class="list-group-item puntero-manito">
-						<h3 class="list-group-item-heading"></h3>
-						<p class="text-center">
-							<figure>
-								<img class="img-circle  img-media" src="image.jpg">
-							</figure>
-						</p>
-						<p class="text-justify">
-							texto texto texto texto texto texto texto texto texto texto texto texto texto
-							texto texto texto texto texto texto texto texto texto texto texto texto texto
-							texto texto texto texto texto texto texto texto texto texto texto texto
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-					<div class="list-group-item puntero-manito">
-						<h3 class="list-group-item-heading"></h3>
-						<p class="text-center">
-							<figure>
-								<img class="img-circle  img-media" src="image.jpg">
-							</figure>
-						</p>
-						<p class="text-justify">
-							texto texto texto texto texto texto texto texto texto texto texto texto texto
-							texto texto texto texto texto texto texto texto texto texto texto texto texto
-							texto texto texto texto texto texto texto texto texto texto texto texto
-						</p>
-					</div>
-					<div class="list-group-item puntero-manito">
+					<div class="list-group-item puntero-manito tarjeta">
 						<h3 class="list-group-item-heading"></h3>
 						<p class="text-center">
 							<figure>
@@ -119,7 +122,35 @@
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-					<div class="list-group-item puntero-manito">
+					<div class="list-group-item puntero-manito tarjeta">
+						<h3 class="list-group-item-heading"></h3>
+						<p class="text-center">
+							<figure>
+								<img class="img-circle  img-media" src="image.jpg">
+							</figure>
+						</p>
+						<p class="text-justify">
+							texto texto texto texto texto texto texto texto texto texto texto texto texto
+							texto texto texto texto texto texto texto texto texto texto texto texto texto
+							texto texto texto texto texto texto texto texto texto texto texto texto
+						</p>
+					</div>
+					<div class="list-group-item puntero-manito tarjeta">
+						<h3 class="list-group-item-heading"></h3>
+						<p class="text-center">
+							<figure>
+								<img class="img-circle  img-media" src="image.jpg">
+							</figure>
+						</p>
+						<p class="text-justify">
+							texto texto texto texto texto texto texto texto texto texto texto texto texto
+							texto texto texto texto texto texto texto texto texto texto texto texto texto
+							texto texto texto texto texto texto texto texto texto texto texto texto
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+					<div class="list-group-item puntero-manito tarjeta">
 						<h3 class="list-group-item-heading"></h3>
 						<p class="text-center">
 							<figure>
@@ -142,6 +173,28 @@
 
 
 	</body>
-	<?php require_once("content/footer.php"); ?>
+	<footer>
+	  <div class="row">
+	    <div class="col-lg-4">
+	      <p class="text-center">
+	        <i class="fa fa-twitter fa-5x"></i>
+	      </p>
+	    </div>
+	    <div class="col-lg-4">
+	      <p class="text-center" >
+	        <i class="fa fa-facebook fa-5x "></i>
+	      </p>
+	    </div>
+	    <div class="col-lg-4">
+	      <p class="text-center">
+	        <i class="fa fa-instagram fa-5x"></i>
+	      </p>
+	    </div>
+	  </div>
+
+	  <script src="lib/jquery/jquery.js" charset="utf-8"></script>
+	  <script src="lib/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+		<script src="js/js_index.js" charset="utf-8"></script>
+	</footer>
 
 </html>
