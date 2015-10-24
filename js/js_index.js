@@ -1,16 +1,25 @@
 $(function()
 {
-  setInterval(animacionTarjeta, 5000);
+    setInterval(animacionTarjeta, 5000);
 });
 
 function animacionTarjeta()
 {
-  //Obtener un numero random en base a las tarjetas
-  var randomNumber = Math.floor(Math.random() *  $(".tarjeta").length);
+    try
+    {
+        //Obtener un numero random en base a las tarjetas
+        var randomNumber = Math.floor(Math.random() *  $(".tarjeta").length);
 
-  /*
-  * //Generar animacion de la tarjeta con numero randomNumber
-  * y asegurarse que los hermanos no tengan la animacion
-  */
-  $(".tarjeta").eq(randomNumber).addClass('tada').siblings().removeClass('tada');
+        //Asegurarse que todas las tarjetas no tengan la animacion
+        $(".tarjeta").each(function(index){
+          $(this).removeClass('tada');
+        });
+
+        $(".tarjeta").eq(randomNumber).addClass('tada');
+
+    }
+    catch (e)
+    {
+      console.log(e);
+    }
 }

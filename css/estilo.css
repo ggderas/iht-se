@@ -40,6 +40,12 @@
   height: 200px
 }
 
+.tarjeta
+{
+  
+}
+
+
 /*Hacer un poco mas grande la imagen cuando se posicione en ella*/
 :hover.img-lg
 {
