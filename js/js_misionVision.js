@@ -1,25 +1,18 @@
-// $(document()
-// {
-//
-// });
+$(function(){
 
-function init()
-{
-  // $("#rowMision").hide();
-  // $("#rowVision").hide();
-  //
-  //
-  // $("#rowMision").fadeIn();
-  //
-  // setTimeout(function(){}, 10000000);
-  //
-  //
-  // $("#rowVision").fadeIn();
+  //Animacion de los rows de Mision y VIsion
+  $("#rowMision").hide();
+  $("#rowMision").removeClass('hidden', function(){
+      $("#rowMision").fadeIn('slow');
+  });
+  $("#rowMision").show('slow');
+
+
 
   $("#rowVision").hide();
-  $("#rowVision").removeClass('hidden',
-  function()
-  {
-      $("#rowVision").fadeIn("slow");
+  $("#rowVision").removeClass('hidden', function(){
+      $("#rowVision").fadeIn('slow');
   });
-}
+  $("#rowVision").show('slow');
+
+});

@@ -23,6 +23,12 @@
   display:none;
 }
 
+.img-media
+{
+  width:800px;
+  height: 500px
+}
+
 figure img
 {
     /* Centrar imagenes dentro de los elementos Figure*/

@@ -1,6 +1,6 @@
 $(function()
 {
-  setInterval(animacionTarjeta, 2000);
+  setInterval(animacionTarjeta, 5000);
 });
 
 function animacionTarjeta()
