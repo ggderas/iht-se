@@ -1,6 +1,9 @@
 $(function()
 {
-    setInterval(animacionTarjeta, 5000);
+  $("#rowPlayas").hide();
+  $("#rowRestaurantes").hide();
+  
+  setInterval(animacionTarjeta, 5000);
 });
 
 function animacionTarjeta()
@@ -22,4 +25,16 @@ function animacionTarjeta()
     {
       console.log(e);
     }
+}
+
+function mostrarDiv(id)
+{
+  //Ocultar el div que esta activo antes de mostrar el nuevo
+  $(".contenido").each(function(){
+    $(this).hide();
+  });
+
+  $("#" + id).hide();
+  $("#" + id).show('slow');
+
 }

@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" media="screen" title="Bootstrap CSS" charset="utf-8">
 		<link rel="stylesheet" href="css/estilo.css" media="screen" title="Bootstrap CSS" charset="utf-8">
 		<link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.min.css" charset="utf-8">
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-footer.css" charset="utf-8">
 
 	</head>
 
@@ -18,33 +19,112 @@
 		<div class="container">
 
 			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link"><i class="fa fa-home fa-2x"></i>Inicio</a>
+				</li>
 			  <li class="dropdown">
-			    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Instituto de Turismo <span class="caret"></span></a>
+			    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-sun-o fa-2x"></i>Instituto de Turismo <span class="caret"></span></a>
 			    <ul class="dropdown-menu">
 			      <li><a href="content/info/misionVision.html">Misión y Visión</a></li>
 						<li><a href="content/info/programasProyectos.html">Programas y Proyectos</a></li>
 			      <li><a href="content/info/policiaTurismo.html">Policía de Turismo</a></li>
 			    </ul>
 			  </li>
-			  <li class="nav-item">
-			    <a href="#" class="nav-link">Link</a>
-			  </li>
-			  <li class="nav-item">
-			    <a href="#" class="nav-link">Another link</a>
-			  </li>
-			  <li class="nav-item disabled">
-			    <a href="#" class="nav-link">Disabled</a>
-			  </li>
 			</ul>
 
-			<div class="row">
-			  <div class="col-lg-12">
 
-			  </div>
+			<div class="row">
+				<div class="col-lg-4 tarjeta puntero-manito" onclick="mostrarDiv('rowPlayas')">
+					<figure>
+						<img src="icos/ico-beach.png" alt="" />
+						<figcaption class="lead text-center">Playas</figcaption>
+					</figure>
+				</div>
+				<div class="col-lg-4 tarjeta puntero-manito" onclick="mostrarDiv('rowRestaurantes')">
+					<figure>
+						<img src="icos/ico-vino.png" alt="" />
+						<figcaption class="lead text-center">Restaurantes</figcaption>
+					</figure>
+				</div>
+				<div class="col-lg-4 tarjeta puntero-manito">
+					<figure>
+						<img src="icos/ico-bedroom.png" alt="" />
+						<figcaption class="lead text-center">Hoteles</figcaption>
+					</figure>
+				</div>
 			</div>
 
 
-			<div class="row">
+			<div class="row contenido" id="rowPlayas">
+				<div class="col-lg-12">
+					<div class="col-lg-6">
+						<figure>
+							<img class=" img img-rounded" src="images/tela.jpg" alt="" />
+						</figure>
+					</div>
+					<div class="col-lg-6">
+						<h3>Tela</h3>
+						<p class="text-justify">
+						  Este	municipio es famoso por sus playas siendo uno de los principales destinos de los turistas en la Semana Santa.
+							Además, la enorme riqueza cultural que representa el pueblo garífuna, Patrimonio Intangible de la Humanidad
+							y que habita en diversas aldeas como Tornabé, San Juan y Triunfo de la Cruz. Las playas de la Bahía de Tela
+							son las que más prefieren los turistas. En este municipio está el impresionante complejo turístico de Indura.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<div class="col-lg-6">
+						<h3>Utila</h3>
+						<p class="text-justify">
+							Utila es la más pequeña de las islas que conforman el departamento de Islas de la Bahía, en el Caribe hondureño. A pesar de su reducido tamaño (mide tan solo siete millas de longitud de tres por ancho), la mayor parte de la isla se encuentra deshabitada.
+							La isla de Utila es famosa por su buceo (y snorkel), y es conocido como el lugar más barato en el mundo para obtener certificados de buceo. La barrera de arrecifes más grande de América bordea Utila. Es más de 1,000 km de largo y alberga más de 500 especies de peces, 1,000 manatís, y una increíble cantidad de delfines. Utila tiene la mayor población de tiburones ballena, y un centro de investigación dedicado a estudiarlos.
+						</p>
+					</div>
+					<div class="col-lg-6">
+						<figure>
+							<img class=" img img-rounded" src="images/utila.jpg" alt="" />
+						</figure>
+					</div>
+				</div>
+
+
+				<div class="col-lg-12">
+					<div class="col-lg-6">
+						<figure>
+							<img class=" img img-rounded" src="images/cortes.jpg" alt="" />
+						</figure>
+					</div>
+					<div class="col-lg-6">
+						<h3>Puerto Cortés</h3>
+						<p class="text-justify">
+									Está ubicado a 55 kilómetros de San Pedro Sula y hoy en día está considerado como el puerto más
+									importante de Centroamérica. Esta ciudad cuenta con diversos atractivos turísticos; entre los
+									que podemos mencionar las playas municipales. Entre ellas la de La Coca Cola, caracterizada
+									por sus aguas tranquilas por estar protegida por la bahía del puerto. Al norte de la península
+								 	porteña se encuentran también las playas de El Faro, La Vacacional, Travesía y Bajamar. La Laguna
+								 	de Alvarado la cual se conecta al mar a través de la Bahía Porteña, está rodeada por verdes manglares.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<div class="col-lg-6">
+						<h3>Cayos Cochinos</h3>
+						<p class="text-justify">
+								Los Cayos Cochinos es un archipiélago compuesto por dos islas pequeñas (Cayo Mayor y Cayo Menor)
+								y 13 de menor tamaño. Están ubicados a doce kilómetros y medio al noroeste de la ciudad de La Ceiba,
+							 en la costa norte de Honduras, en el mar Caribe. Dada su enorme riqueza natural, en 2003 el gobierno
+							 declaró el archipiélago zona protegida en calidad de Monumento Nacional Marino.
+						</p>
+					</div>
+					<div class="col-lg-6">
+						<figure>
+							<img class=" img img-rounded" src="images/cayos.jpg" alt="" />
+						</figure>
+					</div>
+				</div>
+			</div>
+
+			<div class="row contenido" id="rowRestaurantes">
 				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
 					<div class="list-group">
 						<div class="list-group-item puntero-manito tarjeta ">
@@ -124,92 +204,26 @@
 					</div>
 				</div>
 			</div>
-
-
-			<div class="row">
-			<div class="media">
-			  <a class="media-left" href="#">
-			    <img class=" img img-rounded" src="images/hotelceiba.jpg" alt="" />
-			  </a>
-			  <div class="media-body">
-			    <h4 class="media-heading text-center lead">TELA</h4>
-					<p class="text-justify">
-					  Este	municipio es famoso por sus playas siendo uno de los principales destinos de los turistas en la Semana Santa.
-						Además, la enorme riqueza cultural que representa el pueblo garífuna, Patrimonio Intangible de la Humanidad
-						y que habita en diversas aldeas como Tornabé, San Juan y Triunfo de la Cruz. Las playas de la Bahía de Tela
-						son las que más prefieren los turistas. En este municipio está el impresionante complejo turístico de Indura.
-					</p>
-			  </div>
-			</div>
-
-			<div class="media">
-			  <a class="media-left" href="#">
-			    <img class=" img img-rounded" src="images/roatanhotel.jpg" alt="" />
-			  </a>
-			  <div class="media-body">
-			    <h4 class="media-heading text-center lead">ROATAN</h4>
-					<p class="text-justify">
-							Roatán es uno de los lugares turísticos mas visitados de Honduras, los hondureños en el tiempo de verano,
-							tienen preferencia en visitar las playas de Islas de la Bahía, en especial Roatán, debido a sus cristalinas
-							aguas y a la belleza y tranquilidad que se puede disfrutar en compañía de la familia. En el otoño de 1998,
-							El huracán Mitch, con vientos de 243 km por hora, azotó la isla aunque no hizo demasiado daño, ya que el
-							agua no afectó ni siquiera a las casas a la orilla de la playa.
-					</p>
-			  </div>
-			</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-12">
-
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-					<div class="list-group">
-						<div class="list-group-item puntero-manito tarjeta ">
-							<h3 class="list-group-item-heading"></h3>
-							<p class="text-center">
-								<figure>
-									<img class="img-circle  img-tarjeta" src="images/roatan.jpg">
-								</figure>
-							</p>
-							<p class="text-justify">
-									Con su exuberante vegetación y sus extensas playas de aguas color turquesa,
-									Roatán tiene bellos parajes. Entre las que se destacan las fabulosas playas de West End,
-									 que posee todo lo que necesita para gozar de la temporada llena de diversión, relajamiento
-									 y cultura. El inglés es el idioma más extendido en Roatán como consecuencia de la inicial
-									  ocupación británica. Gracias a la abundante comunidad angloparlante que reside en Roatán,
-										el dólar tiene mayor circulación que el lempira.
-							</p>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-
 		</div>
 
 
 
 	</body>
-	<footer>
+	<footer class="footer">
 	  <div class="row">
 	    <div class="col-lg-4">
 	      <p class="text-center">
-	        <i class="fa fa-twitter fa-5x"></i>
+	        <a href="https://twitter.com/hondurasiht"><i class="fa fa-twitter fa-5x"></i></a>
 	      </p>
 	    </div>
 	    <div class="col-lg-4">
 	      <p class="text-center" >
-	        <i class="fa fa-facebook fa-5x "></i>
+	        <a href="https://www.facebook.com/Instituto-Hondure%C3%B1o-de-Turismo-342251765968994/"><i class="fa fa-facebook fa-5x "></i></a>
 	      </p>
 	    </div>
 	    <div class="col-lg-4">
 	      <p class="text-center">
-	        <i class="fa fa-instagram fa-5x"></i>
+	        <a href="https://instagram.com/turismo.honduras/"><i class="fa fa-instagram fa-5x"></i></a>
 	      </p>
 	    </div>
 	  </div>
