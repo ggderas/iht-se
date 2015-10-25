@@ -2,8 +2,10 @@ $(function()
 {
   $("#rowPlayas").hide();
   $("#rowRestaurantes").hide();
-  
+  $("#rowMundoColonial").hide();
+
   setInterval(animacionTarjeta, 5000);
+  
 });
 
 function animacionTarjeta()
@@ -34,7 +36,6 @@ function mostrarDiv(id)
     $(this).hide();
   });
 
-  $("#" + id).hide();
   $("#" + id).show('slow');
 
 }
