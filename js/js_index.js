@@ -3,6 +3,7 @@ $(function()
   $("#rowPlayas").hide();
   $("#rowRestaurantes").hide();
   $("#rowMundoColonial").hide();
+  $("#rowHoteles").hide();
 
   setInterval(animacionTarjeta, 5000);
   
