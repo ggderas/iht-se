@@ -40,3 +40,35 @@ function mostrarDiv(id)
   $("#" + id).show('slow');
 
 }
+      //en estos eventos se cargaran las pantallas 
+      $("#restaurante").click(function(){  
+        alert("playa");
+        //$("#caja").load('content/Administracion/administracionPlaya.php');
+      })
+
+      $("#playa").click(function(){
+        alert("Playa");
+        //$("#caja").load('content/index/na.php');
+      })
+
+      $("#mundoColonial").click(function(){
+        alert("Mundo Colonial");
+        //$("#caja").load('content/index/na.php');
+      })
+
+      $("#hotel").click(function(){
+        alert("Hoteles");
+        //$("#caja").load('content/index/na.php');
+      })
+
+      $("#administracion").click(function()
+      {
+        
+        $("#contenedor").load("content/administracion/administracion.php");
+      })
+
+      $("#inicio").click(function()
+      {
+        
+        $("#contenedor").load("content/inicio/inicio.php");
+      })

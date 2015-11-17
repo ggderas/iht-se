@@ -77,6 +77,11 @@
   animation-name: pulse;
   animation-duration: 1s;
 }
+footer
+{
+  margin: 0;
+  padding: 0;
+}
 
 
 figure img
